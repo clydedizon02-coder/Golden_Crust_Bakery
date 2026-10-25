@@ -1,0 +1,59 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<section class="hero">
+    <div class="container hero-wrap">
+        <p class="eyebrow">Bacnotan · La Union</p>
+        <h1>Bread worth<br>waking up for.</h1>
+        <p class="lead">Artisan loaves, flaky pastries, and celebration cakes — baked before sunrise, ready when you are.</p>
+        <div class="hero-actions">
+            <a href="{% url 'main:menu' %}" class="btn btn-fill">See the Menu</a>
+            <a href="{% url 'main:contact' %}" class="btn btn-ghost">Find Us</a>
+        </div>
+    </div>
+</section>
+
+<section class="strip">
+    <div class="container strip-row">
+        <div class="strip-item"><span>04:00</span> Ovens start</div>
+        <div class="strip-item"><span>40+</span> Daily items</div>
+        <div class="strip-item"><span>100%</span> Handcrafted</div>
+        <div class="strip-item"><span>6AM</span> Doors open</div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-head">
+            <h2>What we bake</h2>
+            <p>Three things we do every single day.</p>
+        </div>
+        <div class="card-row">
+            <article class="card">
+                <div class="card-icon">🍞</div>
+                <h3>Daily Bread</h3>
+                <p>Pandesal, wheat loaves, and garlic bread — warm from the oven.</p>
+            </article>
+            <article class="card">
+                <div class="card-icon">🥐</div>
+                <h3>Pastries</h3>
+                <p>Croissants, ensaymada, cinnamon rolls, and chocolate danishes.</p>
+            </article>
+            <article class="card">
+                <div class="card-icon">🎂</div>
+                <h3>Cakes</h3>
+                <p>Custom celebration cakes and ready-to-slice favorites.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="banner">
+    <div class="container banner-inner">
+        <h2>Hungry already?</h2>
+        <p>Come by this morning. The best items go first.</p>
+        <a href="{% url 'main:contact' %}" class="btn btn-fill">Get Directions</a>
+    </div>
+</section>
+{% endblock %}
