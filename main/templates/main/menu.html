@@ -1,0 +1,35 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}Menu{% endblock %}
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <p class="eyebrow">Today’s bake</p>
+        <h1>Menu</h1>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <h2 class="menu-label">Breads</h2>
+        <div class="menu-list">
+            <div class="menu-row"><div><h3>Classic Pandesal</h3><p>Soft, slightly sweet Filipino favorite</p></div><span>₱5</span></div>
+            <div class="menu-row"><div><h3>Whole Wheat Loaf</h3><p>Hearty and wholesome</p></div><span>₱95</span></div>
+            <div class="menu-row"><div><h3>Cheese Bread</h3><p>Golden top with melted cheese</p></div><span>₱18</span></div>
+            <div class="menu-row"><div><h3>Garlic Bread</h3><p>Buttery and fragrant</p></div><span>₱45</span></div>
+        </div>
+        <h2 class="menu-label">Pastries</h2>
+        <div class="menu-list">
+            <div class="menu-row"><div><h3>Butter Croissant</h3><p>Flaky layers of pure butter</p></div><span>₱55</span></div>
+            <div class="menu-row"><div><h3>Ensaymada</h3><p>Soft, cheesy, sugar-topped</p></div><span>₱40</span></div>
+            <div class="menu-row"><div><h3>Cinnamon Roll</h3><p>Warm spices, cream cheese glaze</p></div><span>₱65</span></div>
+            <div class="menu-row"><div><h3>Chocolate Danish</h3><p>Rich chocolate in flaky pastry</p></div><span>₱60</span></div>
+        </div>
+        <h2 class="menu-label">Cakes</h2>
+        <div class="menu-list">
+            <div class="menu-row"><div><h3>Chocolate Fudge Cake</h3><p>Moist layers, rich frosting</p></div><span>₱850</span></div>
+            <div class="menu-row"><div><h3>Ube Cheesecake</h3><p>Creamy with local ube</p></div><span>₱950</span></div>
+            <div class="menu-row"><div><h3>Custom Celebration Cake</h3><p>Made to order</p></div><span>from ₱1,200</span></div>
+        </div>
+    </div>
+</section>
+{% endblock %}

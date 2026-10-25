@@ -1,0 +1,40 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}Contact{% endblock %}
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <p class="eyebrow">Say hello</p>
+        <h1>Contact</h1>
+    </div>
+</section>
+<section class="section">
+    <div class="container contact-wrap">
+        <div class="contact-info">
+            <div class="info-block">
+                <h4>Location</h4>
+                <p>Near DMMMSU North La Union Campus<br>Bacnotan, La Union</p>
+            </div>
+            <div class="info-block">
+                <h4>Phone</h4>
+                <p>(072) 555-7890</p>
+            </div>
+            <div class="info-block">
+                <h4>Email</h4>
+                <p>hello@goldencrust.ph</p>
+            </div>
+            <div class="info-block">
+                <h4>Hours</h4>
+                <p>Mon – Sat: 6:00 AM – 7:00 PM<br>Sunday: 6:00 AM – 5:00 PM</p>
+            </div>
+        </div>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you! This is a demo form.');">
+            <h3>Send a message</h3>
+            <label>Name<input type="text" required placeholder="Your name"></label>
+            <label>Email<input type="email" required placeholder="you@email.com"></label>
+            <label>Message<textarea rows="4" required placeholder="Order or question..."></textarea></label>
+            <button type="submit" class="btn btn-fill">Send</button>
+        </form>
+    </div>
+</section>
+{% endblock %}

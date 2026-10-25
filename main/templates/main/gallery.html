@@ -1,0 +1,24 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}Gallery{% endblock %}
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <p class="eyebrow">Inside the bakery</p>
+        <h1>Gallery</h1>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="mosaic">
+            <div class="mosaic-item tall" style="background: linear-gradient(145deg, #2C1810, #8B5A2B);"><span>Morning Bake</span></div>
+            <div class="mosaic-item" style="background: linear-gradient(145deg, #C4704B, #E8A87C);"><span>Croissants</span></div>
+            <div class="mosaic-item" style="background: linear-gradient(145deg, #5C4A42, #C4A484);"><span>Pandesal</span></div>
+            <div class="mosaic-item wide" style="background: linear-gradient(145deg, #1A1210, #C4704B);"><span>Custom Cakes</span></div>
+            <div class="mosaic-item" style="background: linear-gradient(145deg, #8B5A2B, #F5E6D3);"><span>Pastry Case</span></div>
+            <div class="mosaic-item" style="background: linear-gradient(145deg, #3E2723, #D4A017);"><span>Oven</span></div>
+        </div>
+        <p class="note">Placeholder visuals — real photos can be added in static/images later.</p>
+    </div>
+</section>
+{% endblock %}
